@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Cat FactVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="CatFactVC" customModule="CatFactsApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="exj-X9-ivq">
+                                <rect key="frame" x="20" y="64" width="374" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="5GZ-IK-WIF"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hjV-PM-JRR">
+                                <rect key="frame" x="20" y="384" width="374" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="iMA-K6-O8D">
+                                <rect key="frame" x="188.5" y="195.5" width="37" height="37"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="exj-X9-ivq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5go-od-idK"/>
+                            <constraint firstItem="iMA-K6-O8D" firstAttribute="centerY" secondItem="exj-X9-ivq" secondAttribute="centerY" id="6iy-q9-1dp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="exj-X9-ivq" secondAttribute="trailing" constant="20" id="BOT-mE-V5O"/>
+                            <constraint firstItem="hjV-PM-JRR" firstAttribute="leading" secondItem="exj-X9-ivq" secondAttribute="leading" id="FNG-J7-zl7"/>
+                            <constraint firstItem="hjV-PM-JRR" firstAttribute="trailing" secondItem="exj-X9-ivq" secondAttribute="trailing" id="KMo-zu-11k"/>
+                            <constraint firstItem="exj-X9-ivq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="UTV-eI-hRH"/>
+                            <constraint firstItem="iMA-K6-O8D" firstAttribute="centerX" secondItem="exj-X9-ivq" secondAttribute="centerX" id="Vjx-Q7-nTI"/>
+                            <constraint firstItem="hjV-PM-JRR" firstAttribute="top" secondItem="exj-X9-ivq" secondAttribute="bottom" constant="20" id="iIa-Im-KCQ"/>
+                            <constraint firstItem="exj-X9-ivq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="jL4-M2-IgS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="iMA-K6-O8D" id="Kil-pP-XZq"/>
+                        <outlet property="catFactLabel" destination="hjV-PM-JRR" id="V5N-JO-QCS"/>
+                        <outlet property="catImageView" destination="exj-X9-ivq" id="kOM-jj-nna"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="93.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
